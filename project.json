@@ -1,9 +1,0 @@
-
-{
-  "name": "IOpipeCollector",
-  "description": "Collector Service",
-  "memory": 128,
-  "timeout": 5,
-  "environment": {},
-  "role": "arn:aws:iam::554407330061:role/lambda_basic_vpc_execution"
-}
