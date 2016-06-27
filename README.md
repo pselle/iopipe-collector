@@ -2,7 +2,15 @@ IOpipe Telemetry Service
 ------------------------
 
 For the collection and access of tracing data from
-serverless applications into Elasticsearch.
+serverless applications into ELK with a Logstash HTTP listener.
+
+Configuration
+-------------
+
+Set environment variables:
+
+ - LISTEN_PORT (default: 80)
+ - LOGSTASH_HOST (default: https://localhost)
 
 Installation
 ------------
@@ -16,7 +24,7 @@ docker build -t iopipe-telemetry-api .
 Deploy on Docker:
 
 ```
-docker run -e CONFIGVAR1=value -d telemetry-api
+docker run -e LOGSTASH_HOST=http://example.com -d telemetry-api
 ```
 
 Production users will likely deploy this with Kubernetes
