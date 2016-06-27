@@ -1,8 +1,13 @@
-IOpipe Telemetry Service
-------------------------
+Serverless Stack tracing & telemetry daemon
+-------------------------------------------
 
-For the collection and access of tracing data from
+For the open collection and access of tracing data from
 serverless applications into ELK with a Logstash HTTP listener.
+
+Collects data from our reference reporting agent:
+[IOpipe-agent-node](https://github.com/iopipe/iopipe-agent-node).
+
+Post data to /event as application/json.
 
 Configuration
 -------------
@@ -30,14 +35,6 @@ docker run -e LOGSTASH_HOST=http://example.com -d telemetry-api
 Production users will likely deploy this with Kubernetes
 as a ReplicationController, or under Docker Swarm as a
 Service.
-
-Reporting Telemetry
--------------------
-
-Post data to /event as application/json.
-
-Our reference reporting agent is
-[IOpipe-agent-node](https://github.com/iopipe/iopipe-agent-node).
 
 LICENSE
 -------
