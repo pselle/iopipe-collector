@@ -17,7 +17,23 @@ Set environment variables:
  - LISTEN_PORT (default: 80)
  - LOGSTASH_HOST (default: https://localhost)
 
-Installation
+Install & Deploy with Docker
+----------------------------
+
+We provide an official build of this project at `iopipe/collector`.
+
+To run our image:
+
+```
+docker run -e LOGSTASH_HOST=http://example.com -d iopipe/collector
+```
+
+Production users will likely deploy this with Kubernetes
+as a ReplicationController, or under Docker Swarm as a
+Service.
+
+
+Building
 ------------
 
 Build as a Docker image:
@@ -25,16 +41,6 @@ Build as a Docker image:
 ```
 docker build -t iopipe-telemetry-api .
 ```
-
-Deploy on Docker:
-
-```
-docker run -e LOGSTASH_HOST=http://example.com -d telemetry-api
-```
-
-Production users will likely deploy this with Kubernetes
-as a ReplicationController, or under Docker Swarm as a
-Service.
 
 LICENSE
 -------
