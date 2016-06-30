@@ -1,5 +1,6 @@
 Serverless Stack tracing & telemetry daemon
 -------------------------------------------
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?maxAge=2592000)](https://gitter.im/iopipe/iopipe)
 
 For the open collection and access of tracing data from
 serverless applications into ELK with a Logstash HTTP listener.
