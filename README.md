@@ -9,6 +9,9 @@ Collects data from our reference reporting agent:
 
 Post data to /event as application/json.
 
+![Serverless
+Kibana Graphs](https://s3.amazonaws.com/web-static-data/kibana-iopipe-collector.png)
+
 Configuration
 -------------
 
