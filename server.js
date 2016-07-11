@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
   res.send("IOpipe Collector API/1.0")
 })
 
-app.post('/event',
+app.post('/v0/event',
   (req, res) => {
     iopipe.define(
       (request, callback) => {
